@@ -1,13 +1,13 @@
 {% set name = "asyncclick" %}
-{% set version = "8.1.7.2" %}
+{% set version = "8.2.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asyncclick-{{ version }}.tar.gz
-  sha256: 219ea0f29ccdc1bb4ff43bcab7ce0769ac6d48a04f997b43ec6bee99a222daa0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/asyncclick-{{ version }}.tar.gz
+  sha256: f58b0a8cc2982df68a4554be381f5c521931a300df67e5279b1b77a2c5776a23
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
